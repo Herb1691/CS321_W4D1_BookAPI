@@ -53,7 +53,7 @@ namespace CS321_W4D1_BookAPI.Controllers
         }
 
         // Get api/publisher/{publisherId}/books
-        [HttpGet("/api/publisher/{publisherId}/books")]
+        [HttpGet("/api/publishers/{publisherId}/books")]
         public IActionResult GetBooksForPublisher(int publisherId)
         {
             var bookModels = _bookService
